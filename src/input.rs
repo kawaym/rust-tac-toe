@@ -38,7 +38,6 @@ pub fn get_input_coord() -> Vec<usize> {
         .into_iter()
         .map(|c| c.parse::<usize>().unwrap())
         .collect();
-    println!("{:?}", coord);
 
     return coord;
 }
