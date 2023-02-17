@@ -16,8 +16,6 @@ pub fn get_input_choice() -> String {
     return word;
 }
 
-//dsajkdhsaujhdsaj
-
 pub fn get_input_coord() -> Vec<usize> {
     println!("Primeiro número deve ser a linha e o segundo a coluna alvo");
     let binding = get_input_from_stdin();
