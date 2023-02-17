@@ -2,6 +2,7 @@ use matrix::insert_letter;
 
 mod input;
 mod matrix;
+mod utils;
 
 fn main() {
     let matrix = matrix::create_matrix(3);
