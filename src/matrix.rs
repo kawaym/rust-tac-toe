@@ -1,4 +1,4 @@
-use std::process::{self};
+use crate::utils;
 
 pub fn create_matrix(size: usize) -> Vec<Vec<String>> {
     clear_board();
@@ -137,10 +137,6 @@ fn check_if_has_winner(matrix: &Vec<Vec<String>>) {
         || check_row(matrix)
     {
         println!("A player has won!");
-        exit_game();
+        utils::exit_game(0x0100);
     }
-}
-
-fn exit_game() {
-    process::exit(0x0100);
 }

@@ -1,3 +1,4 @@
+use crate::utils;
 use std::io::{self};
 
 pub fn get_input_choice() -> String {
@@ -6,11 +7,11 @@ pub fn get_input_choice() -> String {
     if word.len() > 1 || (word.to_uppercase() != "X" && word.to_uppercase() != "O") {
         println!("input should be a X or O");
         println!("Aborting...");
-        return "".to_string();
+        utils::exit_game(0x0100);
     }
 
     if word == ":quit" {
-        return "".to_string();
+        utils::exit_game(0x0100);
     }
 
     return word;
