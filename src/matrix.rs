@@ -43,7 +43,6 @@ pub fn clear_board() {
 
 pub fn insert_letter(matrix: &mut Vec<Vec<String>>, letter: String, coord: Vec<usize>) -> bool {
     matrix[coord[0]][coord[1]] = letter;
-    println!("{:?}", matrix);
     draw_board(matrix.to_vec());
     check_if_has_winner(matrix);
     return true;
